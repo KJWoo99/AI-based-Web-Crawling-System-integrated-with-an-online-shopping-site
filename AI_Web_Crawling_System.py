@@ -80,7 +80,7 @@ else:
     main_text_list.append("You.need.More.Image:"+(f"https://www.google.com/search?sxsrf=AB5stBjpqrbVMrWYt39nCF8nnRg7dtILoA:1691010396511&q={title_text}&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiQhvvP8L6AAxXp3jgGHTrtAIQQ0pQJegQIDBAB&cshid=1691010430312397&biw=1536&bih=715&dpr=1.25")+" In Image sentence, if there is a blank space, rewrite it by putting an '+' in it.")
 
 
-openai.api_key = "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"
+openai.api_key = "YOUR OPENAI API KEY"
 
 for main_text in main_text_list:
     user_content = main_text
