@@ -1,113 +1,113 @@
-# 온라인 쇼핑 플랫폼
+# Online Shopping Platform
 
-이 프로젝트는 풀 스택 온라인 쇼핑 플랫폼으로, 백엔드와 프론트엔드가 포함되어 있습니다. 사용자는 제품을 검색하고 장바구니를 관리하며 결제를 처리할 수 있으며, 관리자는 제품 및 사용자 관리를 수행할 수 있습니다.
+This project is a full-stack online shopping platform, including both backend and frontend components. Users can search for products, manage their shopping cart, and process payments, while administrators can manage products and users.
 
-## 디렉토리 구조
+## Directory Structure
 
-### 백엔드 (`/backend`)
+### Backend (`/backend`)
 
-- **환경 설정**: `.env`
-- **패키지 관리**: `package.json`, `package-lock.json`
-- **소스 코드**: `src/index.js`
-- **미들웨어**: `auth.js`
-- **모델**: `Payment.js`, `Product.js`, `User.js`
-- **라우트**: `products.js`, `users.js`
-- **업로드**: 제품 이미지 저장 디렉토리
+- **Environment Configuration**: `.env`
+- **Package Management**: `package.json`, `package-lock.json`
+- **Source Code**: `src/index.js`
+- **Middleware**: `auth.js`
+- **Models**: `Payment.js`, `Product.js`, `User.js`
+- **Routes**: `products.js`, `users.js`
+- **Uploads**: Directory for storing product images
 
-### 프론트엔드 (`/frontend`)
+### Frontend (`/frontend`)
 
-- **설정**: `.env`
-- **컴포넌트**: 재사용 가능한 UI 컴포넌트
-- **페이지**: `CartPage`, `DetailProductPage`, `HistoryPage`, `LandingPage`, `LoginPage`, `RegisterPage`, `QnAPage`, `ReviewPage`
-- **스토어**: Redux 관련 파일
-- **레이아웃**: `Footer`, `Navbar`
-- **유틸리티**: Axios 설정 및 유틸리티 함수
+- **Configuration**: `.env`
+- **Components**: Reusable UI components
+- **Pages**: `CartPage`, `DetailProductPage`, `HistoryPage`, `LandingPage`, `LoginPage`, `RegisterPage`, `QnAPage`, `ReviewPage`
+- **Store**: Redux-related files
+- **Layout**: `Footer`, `Navbar`
+- **Utilities**: Axios configuration and utility functions
 
-### 관리자 프론트엔드 (`/frontend_admin`)
+### Admin Frontend (`/frontend_admin`)
 
-- **설정**: `.env`
-- **컴포넌트**: 관리자용 UI 컴포넌트
-- **페이지**: `UploadProductPage`, `DetailProductPage`, `HistoryPage`, `LandingPage`, `RegisterPage`
-- **스토어**: Redux 관련 파일
+- **Configuration**: `.env`
+- **Components**: UI components for administrators
+- **Pages**: `UploadProductPage`, `DetailProductPage`, `HistoryPage`, `LandingPage`, `RegisterPage`
+- **Store**: Redux-related files
 
-## 설정 방법
+## Setup Instructions
 
-### 백엔드
+### Backend
 
-1. `backend` 디렉토리로 이동
-2. `npm install` 실행
-3. `.env.example`을 참고하여 `.env` 파일 설정
-4. `npm start` 명령으로 서버 시작
+1. Navigate to the `backend` directory.
+2. Run `npm install`.
+3. Configure the `.env` file based on `.env.example`.
+4. Start the server with `npm start`.
 
-### 프론트엔드
+### Frontend
 
-1. `frontend` 디렉토리로 이동
-2. `npm install` 실행
-3. `.env.example`을 참고하여 `.env` 파일 설정
-4. `npm start` 명령으로 개발 서버 시작
+1. Navigate to the `frontend` directory.
+2. Run `npm install`.
+3. Configure the `.env` file based on `.env.example`.
+4. Start the development server with `npm start`.
 
-### 관리자 프론트엔드
+### Admin Frontend
 
-1. `frontend_admin` 디렉토리로 이동
-2. `npm install` 실행
-3. `.env.example`을 참고하여 `.env` 파일 설정
-4. `npm start` 명령으로 개발 서버 시작
+1. Navigate to the `frontend_admin` directory.
+2. Run `npm install`.
+3. Configure the `.env` file based on `.env.example`.
+4. Start the development server with `npm start`.
 
-## 주요 기능
+## Key Features
 
-- **사용자 인증**: JWT를 사용한 안전한 로그인 및 회원가입
-- **제품 관리**: 제품 검색, 필터링 및 관리
-- **장바구니**: 제품 추가 및 관리
-- **주문 내역**: 이전 주문 확인
-- **관리자 기능**: 제품 및 사용자 쿼리 관리를 위한 관리자 전용 페이지
+- **User Authentication**: Secure login and registration using JWT
+- **Product Management**: Search, filter, and manage products
+- **Shopping Cart**: Add and manage products in the cart
+- **Order History**: View previous orders
+- **Admin Features**: Admin-only pages for managing products and users
 
-## 기술 스택
+## Technology Stack
 
-- **백엔드**: Node.js, Express.js, MongoDB
-- **프론트엔드**: React, Redux
-- **인증**: JWT
-- **기타**: Axios, Mongoose
+- **Backend**: Node.js, Express.js, MongoDB
+- **Frontend**: React, Redux
+- **Authentication**: JWT
+- **Other**: Axios, Mongoose
 
 ---
 
-# Naver 쇼핑 제품 스크래퍼 및 AI 설명 생성기
+# Naver Shopping Product Scraper and AI Description Generator
 
-이 Python 스크립트는 Naver 쇼핑에서 상품을 검색하고, 해당 상품의 정보를 스크래핑한 후 AI를 사용하여 상품 설명을 생성합니다.
+This Python script searches for products on Naver Shopping, scrapes product information, and generates product descriptions using AI.
 
-## 주요 기능
+## Key Features
 
-1. Naver 쇼핑에서 사용자 입력 키워드로 상품 검색
-2. 검색된 상품의 정보 (제목, 가격, 세부 정보) 추출
-3. 한국어 텍스트를 영어로 번역
-4. 상품 이미지 다운로드
-5. OpenAI GPT-3.5를 사용하여 상품 설명 생성
-6. 생성된 설명을 텍스트 파일로 저장
+1. Search for products on Naver Shopping using user-input keywords
+2. Extract product information (title, price, details) from search results
+3. Translate Korean text to English
+4. Download product images
+5. Generate product descriptions using OpenAI GPT-3.5
+6. Save generated descriptions to text files
 
-## 사용된 라이브러리
+## Libraries Used
 
-- `BeautifulSoup`: HTML 파싱
-- `requests`: 웹 요청 처리
-- `openai`: OpenAI GPT-3.5 API 사용
-- `googletrans`: 한국어-영어 번역
+- `BeautifulSoup`: HTML parsing
+- `requests`: Handling web requests
+- `openai`: OpenAI GPT-3.5 API
+- `googletrans`: Korean-to-English translation
 
-## 설치 방법
+## Installation
 
-1. 필요한 라이브러리 설치:
+1. Install required libraries:
     ```bash
     pip install beautifulsoup4 requests openai googletrans
     ```
-2. OpenAI API 키를 코드 내 `openai.api_key = "YOUR OPENAI API KEY"` 부분에 입력
+2. Enter your OpenAI API key in the script at `openai.api_key = "YOUR OPENAI API KEY"`
 
-## 사용 방법
+## Usage
 
-1. 스크립트를 실행합니다.
-2. 검색하고자 하는 상품명을 입력합니다 (한국어 권장).
-3. 스크립트가 자동으로 상품 정보를 검색하고 AI 설명을 생성합니다.
-4. 생성된 정보는 지정된 경로에 이미지와 텍스트 파일로 저장됩니다.
+1. Run the script.
+2. Enter the product name you want to search for (Korean recommended).
+3. The script will automatically search for product information and generate AI descriptions.
+4. The generated information will be saved as images and text files at the specified path.
 
-## 주요 기능 설명
+## Key Function Descriptions
 
-- `translate_korean_to_english()`: 한국어 텍스트를 영어로 번역
-- 웹 스크래핑: Naver 쇼핑에서 상품 정보 추출
-- 이미지 다운로드: 상품 이미지를 로컬에 저장
-- AI 설명 생성: OpenAI GPT-3.5를 사용하여 상품 설명 생성
+- `translate_korean_to_english()`: Translates Korean text to English
+- Web Scraping: Extracts product information from Naver Shopping
+- Image Download: Saves product images locally
+- AI Description Generation: Generates product descriptions using OpenAI GPT-3.5
