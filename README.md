@@ -87,7 +87,7 @@ Welcome to our comprehensive Online Shopping Platform! This full-stack project o
 
 # 🔍 Naver Shopping Product Scraper and AI Description Generator
 
-Automate product research and description generation with this powerful Python script!
+This Python script is designed to search for products on Naver Shopping, scrape product details, and generate descriptions using AI.
 
 
 ## ✨ Key Features
