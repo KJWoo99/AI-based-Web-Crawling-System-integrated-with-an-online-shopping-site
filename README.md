@@ -119,10 +119,10 @@ Automate product research and description generation with this powerful Python s
 
 ## 🖥️ Usage
 
-1. Run the script
-2. Enter product name (Korean recommended)
-3. Wait for the magic to happen!
-4. Find generated content in the specified directory
+1. Run the script.
+2. Enter the product name (Korean recommended).
+3. The script will search for product information and generate AI descriptions.
+4. Generated information will be saved as images and text files at the specified path.
 
 ## 🔧 Key Functions
 
