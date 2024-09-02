@@ -85,9 +85,9 @@ Welcome to our comprehensive Online Shopping Platform! This full-stack project o
 
 ---
 
-# 🔍 Naver Shopping Product Scraper and AI Description Generator
+# 🔍 Naver Shopping Crawling and AI-Based Selling Point Generation System
 
-This Python script is designed to search for products on Naver Shopping, scrape product details, and generate descriptions using AI.
+This Python script is designed to search for products on Naver Shopping, scrape product details, and generate Selling Point using AI.
 
 
 ## ✨ Key Features
@@ -96,7 +96,7 @@ This Python script is designed to search for products on Naver Shopping, scrape 
 2. **📊 Information Extraction**: Gather product details
 3. **🌐 Translation**: Korean to English conversion
 4. **🖼️ Image Download**: Save product images locally
-5. **🤖 AI Description Generation**: Create descriptions with GPT-3.5
+5. **🤖 AI Description Generation**: Create Selling Point with GPT-3.5
 6. **💾 File Saving**: Store generated content
 
 ## 📚 Libraries Used
