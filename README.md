@@ -1,7 +1,7 @@
 
 # 🛍️ Online Shopping Platform
 
-Welcome to our comprehensive Online Shopping Platform! This full-stack project offers a seamless shopping experience with a robust backend API, user-friendly frontend, and powerful admin interface.
+Welcome to Online Shopping Platform! This full-stack project offers a seamless shopping experience with a robust backend API, user-friendly frontend, and powerful admin interface.
 
 ## 🚀 Key Features
 
